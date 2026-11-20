@@ -1,0 +1,62 @@
+site_name: 한 권으로 읽는 한국사
+site_description: 선사 시대부터 현대까지, 한국사의 큰 흐름을 한 권에 담은 입문서
+site_author: leehosup
+docs_dir: docs
+theme:
+  name: material
+  language: ko
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - search.highlight
+    - toc.follow
+  palette:
+    - scheme: default
+      primary: indigo
+      toggle:
+        icon: material/brightness-7
+        name: 다크 모드로 전환
+    - scheme: slate
+      primary: indigo
+      toggle:
+        icon: material/brightness-4
+        name: 라이트 모드로 전환
+plugins:
+  - search:
+      lang:
+        - en
+markdown_extensions:
+  - admonition
+  - attr_list
+  - footnotes
+  - tables
+  - toc:
+      permalink: true
+nav:
+  - 머리말: index.md
+  - 제1부 고대:
+      - 1장 선사 시대: 01-prehistory.md
+      - 2장 고조선과 여러 나라: 02-gojoseon.md
+      - 3장 삼국의 성립과 발전: 03-three-kingdoms.md
+      - 4장 남북국 시대: 04-north-south-states.md
+  - 제2부 고려:
+      - 5장 고려의 성립과 문벌 귀족 사회: 05-goryeo-early.md
+      - 6장 무신 정권과 원 간섭기: 06-goryeo-late.md
+  - 제3부 조선:
+      - 7장 조선의 건국과 유교 국가: 07-joseon-early.md
+      - 8장 왜란과 호란: 08-wars.md
+      - 9장 조선 후기 사회의 변동: 09-joseon-late.md
+  - 제4부 근대:
+      - 10장 개항과 근대 개혁 운동: 10-opening.md
+      - 11장 대한제국과 국권 피탈: 11-korean-empire.md
+      - 12장 일제 강점기와 독립운동: 12-colonial-period.md
+  - 제5부 현대:
+      - 13장 광복, 분단, 6·25 전쟁: 13-liberation-war.md
+      - 14장 산업화와 민주화: 14-industrialization-democracy.md
+      - 15장 오늘의 한국과 통일의 과제: 15-today.md
+  - 부록:
+      - 한국사 연표: appendix-timeline.md
+      - 참고 문헌과 더 읽을거리: appendix-references.md
+      - 사진 출처: appendix-image-credits.md
